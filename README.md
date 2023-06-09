@@ -1,6 +1,10 @@
 # TypeScript Todo App
 
-![Alt Text](https://raw.githubusercontent.com/anurag203/Todo-App/main/image/ss.jpg)
+<!-- ![Alt Text](https://drive.google.com/uc?export=view&id=1XbApoEHM3sruXUhi8KotWXG93xjn7BaM) -->
+<div align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1XbApoEHM3sruXUhi8KotWXG93xjn7BaM" alt="Alt Text" width="400px">
+</div>
+
 
 A beautifully designed and fully functional Todo app built using **TypeScript**. Stay organized, manage your tasks, and boost your productivity with this sleek and intuitive application.
 
