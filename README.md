@@ -1,6 +1,6 @@
 # TypeScript Todo App
 
-![Todo App](https://drive.google.com/file/d/1MbiQoVR3ohXWBjzad8z684mApeKGbb1Y/view?usp=sharing)
+![Todo App](https://drive.google.com/file/d/1MbiQoVR3ohXWBjzad8z684mApeKGbb1Y/view?usp=sharing.jpg)
 
 A beautifully designed and fully functional Todo app built using **TypeScript**. Stay organized, manage your tasks, and boost your productivity with this sleek and intuitive application.
 
