@@ -1,6 +1,6 @@
 # TypeScript Todo App
 
-![Todo App](link_to_screenshot)
+![Todo App](./Pictures-screeshot/Screenshot%202023-06-09%20123623.png)
 
 A beautifully designed and fully functional Todo app built using **TypeScript**. Stay organized, manage your tasks, and boost your productivity with this sleek and intuitive application.
 
@@ -14,6 +14,19 @@ A beautifully designed and fully functional Todo app built using **TypeScript**.
 - ✅ Built with TypeScript for enhanced type safety and developer productivity
 - ✅ Responsive design for seamless usage across desktop and mobile devices
 - ✅ Powered by React and styled with Tailwind CSS
+
+## Demo
+
+Check out the live demo of the app: [Demo Link](https://task2-blush.vercel.app/)
+
+## Tech Stack
+
+The Todo app is built using the following technologies:
+
+- **React**: A JavaScript library for building user interfaces
+- **TypeScript**: A statically typed superset of JavaScript
+- **Tailwind CSS**: A utility-first CSS framework
+- **Vercel**: Deployment platform for hosting the live demo
 
 ## Project Overview
 
@@ -37,8 +50,3 @@ Feel free to explore the codebase, make modifications, and customize the app acc
 ## Contribution
 
 Contributions to this project are welcome! If you have any ideas for improvements or want to add new features, feel free to submit a pull request. Let's collaborate and make this Todo app even better together.
-
-## License
-
-This project is licensed under the MIT License. You are free to use, modify, and distribute the code as per the terms of the license.
-
