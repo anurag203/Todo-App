@@ -1,6 +1,6 @@
 # TypeScript Todo App
 
-![Todo App](./Pictures-screeshot/Screenshot%202023-06-09%20123623.png)
+![Todo App](./image/ss.jpg)
 
 A beautifully designed and fully functional Todo app built using **TypeScript**. Stay organized, manage your tasks, and boost your productivity with this sleek and intuitive application.
 
