@@ -1,0 +1,51 @@
+import React,{ChangeEvent, useState} from 'react'
+import CropEasy from './CropEasy';
+
+const CoverImage = () => {
+
+    const [file, setFile] = useState<File | null>(null);
+    const [photoURL, setPhotoURL] = useState<string|null>(null);
+    const [openCrop, setOpenCrop] = useState(false);
+
+    const handleChange = (e: any) => {
+        const file = e.target.files[0];
+        if (file) {
+            setFile(file);
+            setPhotoURL(URL.createObjectURL(file));
+            setOpenCrop(true);
+        }
+    };
+
+
+    const handleImageChange = (event: ChangeEvent<HTMLInputElement>) => {
+        const file = event.target.files?.[0];
+        if (file) 
+        {
+            setPhotoURL(URL.createObjectURL(file));
+            setOpenCrop(true);
+        }
+    };
+
+    return (
+        !openCrop ?
+            (
+                <div>
+                    <input type="file" accept="image/*" onChange={handleImageChange} />
+                    {photoURL && (
+                        <div className="wrapper w-[720px] h-[360px] bg-green-900 rounded-2xl overflow-hidden relative">
+                            <img src={photoURL} alt="Selected" />
+                        </div>
+                    )}
+                </div>
+            )
+            :
+            (
+                photoURL != null ?
+                    (<div className="fixed inset-0 flex justify-center items-center backdrop-filter backdrop-blur-sm">
+                    <div className="bg-white-100 p-2 shadow-md rounded-lg "> <CropEasy photoURl={photoURL} setOpenCrop={setOpenCrop} setPhotoURL={setPhotoURL} setFile={setFile} /> </div> </div>)
+                : ( <div> </div> )
+            )
+    )
+}
+
+export default CoverImage

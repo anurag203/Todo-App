@@ -4,7 +4,7 @@ import Todo from './Todo';
 
 function App() {
   return (
-    <div className="bg-blue-400 w-full h-full flex items-center justify-center">
+    <div className="bg-blue-400 w-full h-[1000px] flex flex-col  items-center pt-10">
       <Todo />
     </div>
   );

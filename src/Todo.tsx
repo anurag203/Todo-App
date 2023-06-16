@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom'
 import All from './components/All';
 import Completed from './components/Completed';
 import Pending from './components/Pending';
+import CoverImage  from "./components/CoverImage" ;
 
 let currId = 5; 
 function Todo() {
@@ -12,6 +13,8 @@ function Todo() {
     const[arrAll , setArrAll] = useState<number[]>([]);
     const[arrPending , setArrPending] = useState<number[]>([]);
     const[arrCompleted , setArrCompleted] = useState<number[]>([]);
+    const [image, setImage] = useState<HTMLImageElement | null>(null);
+
     const handleClick = ()=>
     {
         if(buttonText==="Clear All") { setArr([]); }
@@ -41,6 +44,8 @@ function Todo() {
     };
     return( 
     <Router>
+    <div className='flex flex-col space-y-8 justify-center items-center ' >
+    <CoverImage/>
     <div className='w-[400px] h-[500px] bg-white-100 rounded-xl flex flex-col border-2 border-black-100'>
     <input onChange={handleChange} value={inputValue} className='border-2 rounded-md mx-6 mt-8 mb-6 py-3 px-7 border-black-100' type="text"  placeholder= "Add a new task"  /> 
     <nav className="flex justify-between mx-6"> 
@@ -57,6 +62,7 @@ function Todo() {
     <Route path='/pending' element = {<Pending arr = {arr} buttonText={buttonText} setButtonText = {setButtonText} arrPending = {arrPending} />} />
     <Route path='/completed' element = {<Completed arr = {arr} buttonText={buttonText} setButtonText = {setButtonText} arrCompleted = {arrCompleted}/>} />
     </Routes>
+    </div>
     </div>
     </Router>
     )
